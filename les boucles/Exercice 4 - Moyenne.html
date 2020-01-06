@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 4 - Moyenne</title>
+</head>
+
+<body>
+    <script>
+        var nombres = 0;
+        var moyendesomme = 0;
+        do {
+            var entier = parseInt(prompt(
+                "Entrez autant que nombres que vous voulez : \n Entrez '0' pour arrêter la saisie"));
+            moyendesomme = (moyendesomme + entier);
+            nombres++;
+        }
+        while (entier != 0)
+        alert("la somme des notes est de " + moyendesomme);
+        alert("la moyenne est de : " + (moyendesomme / (nombres - 1)));
+        console.log("la somme des notes est de " + moyendesomme);
+        console.log("la moyenne est de : " + (moyendesomme / (nombres - 1)));
+    </script>
+</body>
+
+</html>

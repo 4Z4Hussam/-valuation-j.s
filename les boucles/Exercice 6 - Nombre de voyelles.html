@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 6 - Nombre de voyelles. </title>
+</head>
+
+<body>
+    <script>
+        var mot = prompt("entrez un mot ").toLowerCase();//toLowerCase permet transformer la chaîne de caractaire en minuscule.
+        var nombre = 0;
+
+        for (var i = 0; i < mot.length; i++)// mot.length nous permet de compter la longeur de la phrase (chaque lettre )
+        {
+            if (mot[i] == "a" || mot[i] == "e" || mot[i] == "o" || mot[i] == "u" || mot[i] == "i" || mot[i] == "y") // mot[]: nous permet de compter les lettres qui prends la valeur de (i) dans les crochets[]
+            {
+                nombre++;// permet d'ajouter (1) à chaque fois que la condition est vrai 
+            }
+        }
+        alert("le mot " + mot + " contient " + nombre + " de voyelles.");
+
+
+    </script>
+
+</body>
+
+</html>

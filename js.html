@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //déclaration des variables
+        var reponse1 = window.prompt("Saisissez votre nom"); //prompt:afficher le message ou saisir un nombre
+        var reponse2 = window.prompt("Saisissez votre prénom");
+        //boucle if=si , else=sinon 
+        if (window.confirm("etes vous un homme") == true) //confirm=booléen : vérifier si la condition est vrai 
+        {
+            alert("monsieur donc vous etes bienvenu " + reponse1 + reponse2)
+        } else {
+            alert("Bonjour Monsieur  Bienvenue sur notre site web!")
+        }
+        //c'est un exercice avec les opérateurs 
+        var a = "100" // chaîne de caractère
+        var b = 100
+        var c = 1.00
+        var d = true // booléen: vrai ou faux
+
+        alert("ceci est une chaine de caractéres :" + a);
+        b = --b; //permet d'afficher le nombre en dessous de b
+        alert(b); // afficher b
+        alert(c + a); //concaténer les valeurs c & a
+        alert(d = !d) //!:afficher le contraire de la valeur d 
+
+        //un exercice de l'action conditionné
+        var tension = window.prompt("donner la tension");
+        var température = window.prompt("donner la température");
+
+        if (température > 41 && tension > 25) {
+            alert("le patient va perdre patience");
+        } else {
+            alert("éconduire l'olibruis")
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 3 Calculette</title>
+</head>
+
+<body>
+    <script>
+        var nombre1 = parseInt(prompt("entrez nombre1"));
+        var nombre2 = parseInt(prompt("entrez nombre2"));
+        var operateur = prompt("entrez un operateur +,*,- ou/");
+
+        // on traite d'abord le cas de la division par 0:
+        if (operateur == "/" && nombre2 == 0) {
+            alert("division paer zéro : imposible")
+        }
+        else {/* Sinon, tout est OK pour effectuer le calcul demandé,
+      * la structure conditionnelle 'switch' est parfaitement adaptée  
+      */
+            switch (operateur) {
+                case "+":
+                    resultat = nombre1 + nombre2;
+                    break;
+
+                case "-":
+                    resultat = nombre1 - nombre2;
+                    break;
+
+                case "*":
+                    resultat = nombre1 * nombre2;
+                    break;
+
+                case "/":
+                    resultat = nombre1 / nombre2;
+                    break;
+                /* Si on n'est pas rentré dans l'un des cas précédents, c'est que l'opérateur saisi est invalide,
+        * on peut alors utiliser le cas par défaut pour afficher un message d'erreur */
+
+                default:
+                    alert("Opérateur '" + operateur + "' invalide");
+            }//fin du switch
+
+        }// fin du else
+
+        /* Si la variable resultat est de type entier, on l'affiche
+    * mettre une condition ici permet de ne pas afficher 
+    * le message s'il y a une des 2 erreurs divison par zéro ou opérateur invalide 
+    * donc pas de résultat 
+    */
+
+        if (typeof resultat === 'number') {
+            alert(nombre1 + operateur + nombre2 + " = " + resultat);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fonctions de manipulation de données d’un tableau</title>
+</head>
+
+<body>
+    <script>
+        var tableau = []; //un tableau vid nous permrt d'ajouter plusieurs valeurs.
+
+        //-------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = ['ab', 'ab1', 'ab2', 'ab3', 'ab4', 'ab5', 'etc']; //un tableau de chaine de caractaire.
+
+        //-------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 'etc']; // un tableau de chaine de caractaire et entier.
+        console.log(tableau); // ca affiche le tableau qui contenu les valeurs.
+
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        index: 0 1 2 3 4 5 6 //une facon de ranger les items dans un tableau.===> comment ca function===>
+
+            ===
+            > console.log(tableau[1]);
+        /* en ce facon il va afficher l'elment (1)=('a2') dans le tableau en savant que en java script on compte 
+
+                   à partire de (0).*/
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        var langageProg = tableau[3];
+        console.log(
+        langageProg); // c"est un autre facon d'afficher un élement dans un tableau.==>l'element (a4) sera affiché.
+
+        //----------------------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 'etc'];
+        console.log(tableau);
+        tableau[4] = 'ab'; // pour modifier le tableau en ajoutan une valeur à la place d'autre 
+
+        console.log(tableau);
+        /* en conséquence le prmier tableau va rester et on aura un autre tableau qui a été modifié et comme ca
+
+                     on va voir la valeur (a1); à la place de la valeur (5); si on a mit (5); à la place de (4); c'est à dire 5 va prendre la place de (6)dan le tableau*/
+        //-----------------------------------------------------------------------------------------------------------------------------------------------------
+        var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        console.log(tableau);
+
+        tableau.push(['e1']); // on utilise (variable).push pour ajouter une nouvelle valeur à la fin du tableau 
+
+        console.log(tableau);
+        /*en conséquence on aura deux tableaux, le premier est le tableau origineau et le deuxième est le tableau modifié en
+                 ajoutan une nouvelle valeur à la fin*/
+        tableau.push(['e1', 'e2';]);
+        console.log(tableau);
+        /* en ce facon on peut ajouter plus qu'une valeur à al fin du tableau mais en ce facon on aura ((array)=tableau en 
+
+                fransais) et c'est à dir qu'on a un tableau dans un tableau  et les deux valeurs ajoutées existes dans le deuxiem tableau */
+        //------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*pou ajouter plus qu'un variable à fin du tableau mais tout de suite et sans faire un tblaeu dans un tableau il faut utiliser */
+        variable(tableau).push; //
+        1 === >
+            var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        console.log(tableau);
+        2 === > tableau.push('e1', 'e2');
+        console.log(tableau);
+        /* on a ajouter deux valeurs séparé par virgule(,)et sans utiliser les croshets [] et comme ca on va voir les deux valeurs 
+        ajoutés à la suite 
+      /---------------------------------------------------------------------------------------------------------------------------------------------------------
+      pour supprimer une valeur à la fin d'un tableau on utilise*/
+        variable(tableau).pop(); //
+        1 === >
+            var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        console.log(tableau);
+        2 === > tableau
+        .pop(); // en ce facon on aura deuxiem tableau qui est modidié en supprimant la derniere valeur// et on peut l'utiliser plusieurs fois.
+        console.log(tableau);
+        /*----------------------------------------------------------------------------------------------------------------------------------------------------------
+        pour supprimer une valeur au début d'un tableau on utilise */
+        variable(tableau).shift(), //
+            1 === >
+            var tableau = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'etc'];
+        console.log(tableau);
+        2 === > tableau
+        .shift(), // en ce facon on aura deuxiem tableau qui est modidié en supprimant la prmiere valeur//// et on peut l'utiliser plusieurs fois.
+            console.log(tableau);
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+    </script>
+
+
+</body>
+
+</html>

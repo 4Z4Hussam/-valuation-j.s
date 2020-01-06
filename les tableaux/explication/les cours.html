@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>les tableaux</title>
+</head>
+
+<body>
+    <script>
+       /* Exercice 1
+    Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
+    Ensuite l'utilisateur doit rentrer les différentes valeurs du tableau.
+    Puis votre programme doit afficher le contenu du tableau.*/
+        var nombre = parseInt(prompt("Entrer la longueur du tableau"));
+        var tableau = new Array(nombre);
+        for (var i = 0; i < tableau.length; i++) {
+            var saisie = prompt("saisir un element");
+            tableau[i] = saisie;
+        }
+        console.log(tableau);
+       
+    </script>
+</body>
+
+
+</html>

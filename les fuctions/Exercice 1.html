@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Exercice 1</title>
+</head>
+
+<body>
+  <script>
+    /*Créer les 2 fonctions suivantes :
+ produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
+ afficheImg(image) qui affiche l’image passée en paramètre.*/
+    var nombre;
+    var multiple;
+    var image = "";
+
+    function cube(nombre) {
+      nombre = prompt("saaisissez un nombre entier");
+      cube = nombre * nombre * nombre;
+      console.log("le cube de " + nombre + " est égal à " + cube);
+      document.write("le cube de " + nombre + " est égal à " + cube);
+      return cube;
+    }
+
+    function produit(nombre, multiple) {
+      multiple = prompt("entrez  multiple");
+      nombre = prompt("entrez un nombre");
+      produit = nombre * multiple;
+      console.log("<br> le produit de " + nombre + " x " + multiple + " est égal à " + produit);
+      document.write("<br> le produit de " + nombre + " x " + multiple + " est égal à " + produit);
+      return produit;
+    }
+
+    function affichage(image) {
+      document.write(
+        "<br><img src=\"assets/img/papillon.jpg\">");
+      /* document.write nous permet  d'accéder aux différents
+              éléments de la page HTML comme des objets. La partie du code HTML qui s'affiche dans la fenêtre du navigateur
+               est un objet de type document (nous décrirons la notion d'objet dans un autre cours).*/
+
+    }
+    var resultat = cube(3);
+    produit();
+    affichage();
+  </script>
+</body>
+
+</html>

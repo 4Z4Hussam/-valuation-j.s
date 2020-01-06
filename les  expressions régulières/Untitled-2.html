@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var regex1 = /\w+/;
+        var regex2 = new RegExp('\\w+');
+
+        console.log(regex1);
+        // expected output: /\w+/
+
+        console.log(regex2);
+        // expected output: /\w+/
+
+        console.log(regex1 === regex2);
+        // expected output: false
+    </script>
+
+</body>
+
+</html>

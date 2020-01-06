@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 2 - Compter le nombre de lettres</title>
+</head>
+
+<body>
+    <script>
+        /* Exercice 2 : Compter le nombre de lettres
+Ecrivez une fonction qui prend deux paramètres :
+​
+* `phrase` de type _string_
+* `lettre` de type _string_
+La fonction compte le nombre de fois ou `lettre` apparaît dans `phrase`. */
+
+        var compteur = 0;
+        var phrase = prompt("entrz une phrase ").toLowerCase();
+        var lettre = prompt("entrez une lettre");
+
+
+        for (i = 0; i < phrase.length; i++) {
+            if (phrase[i] == lettre) {
+                compteur++;
+            }
+        }
+        console.log("La lettre '" + lettre + "' est présente " + compteur + " fois dans '" + phrase + "'");
+        alert("La lettre '" + lettre + "' est présente " + compteur + " fois dans '" + phrase + "'");
+    </script>
+
+</body>
+
+</html>

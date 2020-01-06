@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eexercice 4- participation</title>
+</head>
+
+<body>
+  <script>
+    var mar = prompt("entrez c por celibataire et m pour marie");
+    var nbe = parseInt(prompt("entrez le nombre d'enfants"));
+    var salaire = parseInt(prompt(" entrez le  salaire"));
+    var pc = 0;
+
+
+    console.log("Salaire : " + salaire);
+    console.log("Marié : " + mar);
+    console.log("Nombre d'enfants : " + nbe);
+
+    if (salaire < 1200) {
+      if (mar == true) {
+        pc = 25 + (10 * nbe) + 10;
+      }
+      else {
+        pc = 20 + (10 * nbe) + 10;
+      }
+    }
+    else // cas ou le salaire est <1200   
+      if (salaire > 1200) {
+        if (mar == true) {
+          pc = 25 + (10 * nbe);
+        }
+        else {
+          pc = 20 + (10 * nbe);
+        }
+      }
+    // Pour limiter au minimum de 50, on le force lorsque c'est supérieur
+    if (pc > 50) {
+      pc = 50;
+    }
+    alert("Le taux de participation final est : " + pc);
+  </script>
+
+</body>
+
+</html>

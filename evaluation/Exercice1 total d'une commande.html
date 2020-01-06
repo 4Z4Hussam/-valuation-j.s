@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Exercice 1 : total d'une commande
+A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant le port PORT et la remise REM, sachant que :
+
+le port est gratuit si le prix des produits TOT est supérieur à 500 €. Dans le cas contraire, le port est de 2% de TOT
+la valeur minimale du port à payer est de 6 €
+la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà
+Testez tous les cas possibles afin de vous assurez que votre script fonctionne.*/
+        var pu;
+        var qtecom;
+        var pap;
+        var port;
+        var rem;
+        var tot;
+        qtecom = parseInt(prompt("entrez la quantité du produi que vous voules acheter"));
+        pu = parseInt(prompt("entrez le prix du produit choisissé"));
+        tot = pu * qtecom;
+        if (tot < 500 && tot > 300) {
+            port = tot * 0.02;
+            console.log("le tarif du port est " + port);
+        } else if (tot < 300) {
+            port = 6;
+            console.log("le port est " + 6);
+        } else if (tot > 500) {
+            port = 0;
+            console.log("le port est gratuit");
+        }
+        if (tot > 100 && tot < 200) {
+            rem = tot * 0.05;
+            console.log("la remise est " + rem);
+        } else {
+            rem = tot * 0.10;
+            console.log("la remise est " + rem);
+        }
+        pap = tot + port - rem;
+        console.log("le prix à payer est " + pap);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 6 : recherche d'un prénom</title>
+</head>
+
+<body>
+    <script>
+        var prenom = prompt("entrez un prenom ");
+        var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel",
+            "Stéphane"
+        ];
+        for (var i = 0; i < tab.length; i++) {
+            if (tab[i] == prenom) {
+                tab.splice(i, 1);
+                tab.push("");
+            }
+        }
+        console.log(tab);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age;
+        var tableau = [];
+        var moyens = 0;
+        var jeunes = 0;
+        var vieux = 0;
+        var i;
+        do {
+            var age = parseInt(prompt("entrez les âges successivement"));
+            tableau.push(age);
+
+        } while (age < 100)
+        console.log(tableau);
+        for (i = 0; i < tableau.length; i++) {
+            if (tableau[i] > 40) {
+                vieux++;
+
+
+            } else if (tableau[i] < 20) {
+                jeunes++;
+
+            } else if (tableau[i] < 40 && tableau[i] > 20) {
+                moyens++;
+
+            }
+        }
+        console.log("le nombre de vieux est " + vieux);
+        console.log("le nombre de jeunes est " + jeunes);
+        console.log("le nombre de moyens est " + moyens);
+    </script>
+
+</body>
+
+</html>

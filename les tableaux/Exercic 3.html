@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercic 3</title>
+</head>
+<body>
+    <script>
+        /*Exercice 3 : Tri d’un tableau
+Ecrire le programme qui réalise le tri à bulles.*/
+
+    var tableau = [9,1,8,2,7,3,6,4,5,0];
+
+      for(i=0; i<tableau.length; i++)//
+      {
+           for (j=0; j<tableau.length; j++)
+       {
+           var tri;
+          if (tableau[j]>tableau[j+1])
+          {
+            tri = tableau[j];
+            tableau[j] = tableau[j+1];
+            tableau[j+1] = tri;
+           console.log(tableau);
+          }
+       }
+      }
+     
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
