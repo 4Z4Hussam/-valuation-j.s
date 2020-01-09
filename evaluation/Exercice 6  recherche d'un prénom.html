@@ -10,14 +10,20 @@
 
 <body>
     <script>
+        /*Exercice 6 : recherche d'un prénom
+Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.
+Si le prénom est trouvé, on l'élimine du tableau en décalant les cases qui le suivent, et en mettant à blanc la dernière case.
+ var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];*/
+
         var prenom = prompt("entrez un prenom ");
         var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel",
             "Stéphane"
         ];
         for (var i = 0; i < tab.length; i++) {
             if (tab[i] == prenom) {
-                tab.splice(i, 1);
-                tab.push("");
+                tab.splice(i, 1);/* splice() est une méthode modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de
+                 nouveaux éléments à même le tableau.On peut ainsi vider ou remplacer une partie d'un tableau.*/
+                tab.push("");// une méthode pour ajouter un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
             }
         }
         console.log(tab);

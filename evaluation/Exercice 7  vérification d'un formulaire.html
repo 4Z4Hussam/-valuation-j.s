@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="eva.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="C:\Users\80010-11-09\Documents\jarditou_logo.jpg" width="300">
+        <h4>tout le jardin </h4>
+    </div>
+
+
+    <nav>
+        <a href="">Accueil</a>
+        <a href="tableau.html" target="blank">tableau</a>
+        <a href="">contact</a>
+    </nav>
+    </header>
+
+    <img src="C:\Users\80010-11-09\Documents\promotion.jpg" height="300" width="1650">
+
+    <div class="test">
+        <form method="POST" enctype="application/x-www-form-urlencoded">
+
+            <fieldset>
+                <legend>vos coordonnées</legend>
+                <label for="nom"> votre nom : <input type="text" class="form-control" placeholder="" id="nome"></label>
+                <label for="prénom"> votre prénom:<input type="text" class="form-control" placeholder=""
+                        id="prenom"></label>
+                <br>
+                <legend>Sex</legend>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Masculin</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Féminin</label>
+                </div>
+                <br>
+                <label for="date de naissance"></label> date naissance:<input type="date" name="ddn"
+                    class="form-control" placeholder="" value="1930-01-01" max="2020-01-01" id="date"></label>
+                <br>
+                <label for="code postal">Code postal:<input type="text" name="codepostal" id="cp"
+                        class="form-control"></label>
+                <label for="adresse"> Adresse:<input type="text" name="adresse" class="form-control"
+                        id="adresse"></label>
+                <label for="ville">ville:<input type="text" name="beauvais" class="form-control" id="ville"></label>
+                <br>
+                <label for="email"> Email:<input type="email" name="emaiel" placeholder="développeur@afpa.fr"
+                        class="form-control" id="email"></label>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">
+                    <h5> Sujet</h5><select name="sujet" size="1" class="custom-select" id="option">
+                        <option> mes commandes</option>
+                        <option> questions sur les produits</option>
+                        <option> reclamation</option>
+                        <option> autres</option>
+                    </select>
+                </label>
+                <div>
+                    <label for=" questions"> Votre question:<textarea class="form-control" type="text" name=""></textarea class="form-control"></label>
+                </div>
+           
+            <input type="checkbox" name="couleur1" value="Bleu" checked> j'accepte le traitement de ce formulaire.
+            <div>
+                <br>
+                <button type="button"  class="btn btn-info">Envoyer</button>
+                <button type="button" class="btn btn-info">Annuler</button>
+        </div>
+        </fieldset>
+        </form>
+        <script src="eva.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

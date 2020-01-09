@@ -10,6 +10,10 @@
 
 <body>
     <script>
+        /*Exercice 3 - Mini et maxi
+Modifiez le programme de la moyenne pour afficher le minimum et le maximum.
+Exercice 'moyenne' : dans chapitre 07 les boucles_ : Ecrire un programme qui saisit des entiers et en 
+affiche la somme et la moyenne (on arrête la saisie avec la valeur 0).*/
         var nombres = 0;
         var moyendesomme = 0;
         var tableau = [];
@@ -23,11 +27,11 @@
 
 
         console.log(tableau);
-        tableau.pop(entier);
-        console.log("la somme des notes est de " + moyendesomme);
-        console.log("la moyenne est de : " + (moyendesomme / (nombres - 1)));
-        console.log(Math.max(...tableau));
-        console.log(Math.min(...tableau));
+        tableau.pop(entier);//une methode pour enlever la derniére element dans le tableau
+        console.log("la somme des notes est " + moyendesomme);
+        console.log("la moyenne est de : " + (moyendesomme / (nombres -1)));
+        console.log(Math.max(...tableau));// une methode pour calculer le maximum
+        console.log(Math.min(...tableau));// une methode pour caculer le minimum
     </script>
 
 </body>

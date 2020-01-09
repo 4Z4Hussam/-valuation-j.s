@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/eva.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="assets/img/jarditou_logo.jpg" width="300">
+        <h4>tout le jardin </h4>
+    </div>
+    <div>
+        <img src="assets/img/promotion.jpg" height="300" width="1650">
+    </div>
+    <form action="http://bienvu.net/script.php" method="POST" id="form">
+        <fieldset>
+            <legend>vos coordonnées</legend>
+            <label for="nom"> votre nom :</label>
+            <input type="text" id="nom" class="form-control" placeholder="nom" required>
+            <span id="nomError"></span>
+            <label for="prenom">votre prénom:</label>
+            <input type="text" class="form-control" id="prenom" placeholder="prenom" required>
+            <span id="prenomError"></span>
+            <legend>Sex</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="mascu" value="option1" checked>
+                <span id="mascuError"></span>
+                <label class="form-check-label" for="exampleRadios1"> Masculin</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="femi" value="option2" required>
+                <span id="femiError"></span>
+
+                <label class="form-check-label" for="exampleRadios2">Féminin</label>
+            </div>
+            <br>
+
+            <div>
+                <label> Date de Naissance </label>
+                <input type="date" id="birth" placeholder="" required>
+            </div>
+            <br>
+            <label for="cp">Code postal:</label>
+            <input type="text" name="codepostal" id="cp" class="form-control" required>
+            <span id="cpError"></span>
+            <br>
+            <label for="adresse"> Adresse:</label>
+            <input type="text" name="adresse" class="form-control" id="adresse" required>
+            <span id="adresseError"></span>
+            <br>
+            <label for="ville">ville:</label>
+            <input type="text" name="beauvais" class="form-control" id="ville" required>
+            <span id="villeError"></span>
+            <br>
+            <label for="mail"> Email:</label>
+            <input type="email" name="mailbox" placeholder="développeur@afpa.fr" class="form-control" id="mail"
+                required>
+            <span id="emailError"></span>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">
+                <h5> Sujet</h5>
+                <select name="sujet" size="1" class="custom-select" id="option">
+                    <option value="sélectionnez un sujet s'il vous plaît"> sélectionnez un sujet s'il vous plaît
+                    </option>
+                    <option value="mes commandes"> mes commandes</option>
+                    <option value="questions sur les produits"> questions sur les produits</option>
+                    <option value="reclamation"> reclamation</option>
+                    <option value="autres"> autres</option>
+                </select>
+                <span id="optionError"></span>
+            </label>
+
+            <label for=" questions"> Votre question:</label>
+            <textarea class="form-control" type="text" name=""></textarea class="form-control" id="question" >
+                        <span id="questionError"></span>
+                    
+           
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="ouiNon" required >
+                        <span id="ouiNonError"></span>
+                        <label class="form-check-label" for="exampleCheck1"> j'accepte le traitement de ce formulaire.</label>
+                      </div>
+            
+        </fieldset>
+                
+                    <br>
+                    <button id="Envoyer" type="submit"  value="Envoyer">Envoyer</button>
+                    <button type="reset" value="reset">Annuler</button>
+                
+        </form>
+    
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       <script src="assets/js/eva.js"></script>
+    </body>
+
+</html>

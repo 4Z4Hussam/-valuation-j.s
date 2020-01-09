@@ -1,0 +1,23 @@
+@media screen and (min-width:1199px) {
+    form {
+        width: 500px;
+        height: 1000px;
+        padding: 10px;
+    }
+
+    label {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    form {
+        width: 500px;
+        height: 1000px;
+        padding: 10px;
+    }
+
+    label {
+        display: block;
+    }
+}
