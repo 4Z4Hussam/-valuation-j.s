@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Exercice 4 - Calcul du nombre de jeunes, de moyens et de vieux
+Il s'agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les 
+personnes d'âge strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans et 40 ans y compris).
+Le programme doit demander les âges successifs.
+Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.
+Donnez le programme Javascript correspondant qui affiche les résultats.*/
+        var age;
+        var tableau = [];
+        var moyens = 0;
+        var jeunes = 0;
+        var vieux = 0;
+        var i;
+        do {
+            var age = parseInt(prompt("entrez les âges successivement"));
+            tableau.push(age);
+
+        } while (age < 100)
+        console.log(tableau);
+        for (i = 0; i < tableau.length; i++) {
+            if (tableau[i] > 40) {
+                vieux++;
+
+
+            } else if (tableau[i] < 20) {
+                jeunes++;
+
+            } else if (tableau[i] < 40 && tableau[i] > 20) {
+                moyens++;
+
+            }
+        }
+        console.log("le nombre de vieux est " + vieux);
+        console.log("le nombre de jeunes est " + jeunes);
+        console.log("le nombre de moyens est " + moyens);
+    </script>
+
+</body>
+
+</html>
